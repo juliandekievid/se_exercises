@@ -1,0 +1,19 @@
+@startuml
+title class Dataframe
+
+class Dataframe{
+ +Dataframe()
+ +Dataframe(std::array<unint8_t, 255>)
+ +~Dataframe()   
+ +getDataframe(): std::array<uint8_t,255  
+ +show()
+ +showAll()
+ +checksumIsCorrect(): bool
+ +clear()
+
+ -dataFrame_m: std::array<uint8_t, 255> 
+ -checksum_m: uint8_t 
+ -setChecksum()
+
+}
+@enduml

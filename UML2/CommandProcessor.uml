@@ -1,0 +1,13 @@
+@startuml
+title class CommandProcessor
+
+class CommandProcessor{
+
+ +CommandProcessor(RotationMotor &rm)
+ +~CommandProcessor()
+ +addCommand(const std::string commandInput, const std::function<void()>) 
+ +executeCommand(const std::string &command)
+ +commandfunction: std::function<void()>
+ -commands_: std::map<std::string, commandfunction>
+}
+@enduml
